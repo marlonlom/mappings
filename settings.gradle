@@ -1,3 +1,4 @@
 rootProject.name = 'mappings'
 include 'mappings-sql'
+include 'mappings-xls'
 

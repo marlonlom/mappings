@@ -7,17 +7,16 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation for describing sql joins for a table column
- * 
+ *
  * @author marlonlom
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface SqlJoin {
-	/**
-	 * Indicates origin class for joined reference
-	 * 
-	 * @return class reference
-	 */
-	@SuppressWarnings("rawtypes")
-	Class from() default Object.class;
+    /**
+     * Indicates origin class for joined reference
+     *
+     * @return class reference
+     */
+    @SuppressWarnings("rawtypes") Class from() default Object.class;
 }

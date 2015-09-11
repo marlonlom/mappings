@@ -15,6 +15,7 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -293,7 +294,7 @@ public final class SqlResultsMapper<T> {
                 listObj.add(obj);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, e.getMessage(), e);
         }
 
         return listObj;
@@ -315,7 +316,7 @@ public final class SqlResultsMapper<T> {
                 populateFields(rs, obj, fields);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, e.getMessage(), e);
         }
 
         return obj;

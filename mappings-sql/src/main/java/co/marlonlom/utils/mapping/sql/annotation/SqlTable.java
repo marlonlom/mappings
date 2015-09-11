@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation used for represent a class type as a sql table
- * 
+ *
  * @author marlonlom
  */
 @Target(ElementType.TYPE)
